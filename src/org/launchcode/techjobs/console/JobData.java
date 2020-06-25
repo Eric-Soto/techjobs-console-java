@@ -135,6 +135,7 @@ public class JobData {
             for(Map.Entry<String, String> pair : row.entrySet()){
                 if(pair.getValue().toUpperCase().contains(value.toUpperCase())){
                     jobs.add(row);
+                    //A break so that it doesnt keep printing repeated options
                     break;
                 }
             }
